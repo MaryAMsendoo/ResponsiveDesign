@@ -75,10 +75,10 @@ img{
    top: 200px;
 }
 
-/*styling the media querry*/
+/*styling the media query*/
 
 /* For Mobile */
-@media (max-width:350px){
+@media (max-width:1081px){
 .images-container{
         background-color: whitesmoke;
         display: grid;
