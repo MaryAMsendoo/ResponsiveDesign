@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+.container li{
+    list-style: none;
+    margin-right: 20px;
+    font-size: 12px;
+}
+.container ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.container .grow{
+    flex-grow: 0.8;
+}
+li:hover{
+    background-color: grey;
+    color: white;
+    border-radius: 5px 1px 5px 1px;
+    padding: 5px;
+    cursor:pointer ;
+}
+.logo:hover, .grow:hover, .all:hover{
+    background-color: white;
+    color: black;
+}
+.logo{
+    text-decoration: rgb(20, 20, 20) underline;
+}
+.text h1{
+    text-align: center;
+    font-size: 17px;
+    margin-top: 30px;
+}
+.container2{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+}
+.container2 ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container2 li{
+    padding-right: 25px;
+    font-size: 12px;
+    margin-top:     35px;
+}
+.all{
+    list-style: none;
+}
+img{
+    width: 300px;
+    height: 200px;
+    margin: 3px;
+    
+
+}
+.images-container{
+   background-color: whitesmoke;
+   display: grid;
+   grid-template-columns: repeat(4, 0.2fr);
+   gap: 5px;
+   align-items: center;
+   justify-content: space-around;
+   position: relative;
+   top: 200px;
+}
+
+/*styling the media querry*/
+
+/* For Mobile */
+@media (max-width:350px){
+.images-container{
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-columns: repeat(1, 0.2fr);
+        gap: 5px;
+        align-items: center;
+        justify-content: space-around;
+     }
+     img{
+        width: 250px;
+        height: 180px;
+        margin: 3px;
+     }
+}
+/* For Tablet */
+@media (min-width:351px){
+    .images-container{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    gap: 5px;
+    align-items: center;
+    justify-content: space-around;
+ }
+ 
+ img{
+    width: 230px;
+    height: 180px;
+    margin: 3px;
+ }
+}
+
+/* For Laptops */
+@media (min-width:601px){
+    .images-container{
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-columns: repeat(4, 0.2fr);
+        gap: 5px;
+        align-items: center;
+        justify-content: space-around;
+     }
+     
+     img{
+        width: 300px;
+        height: 200px;
+        margin: 3px;
+     }
+}
+
+.parent-nav{
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+
+
+}
