@@ -78,7 +78,7 @@ img{
 /*styling the media query*/
 
 /* For Mobile */
-@media (max-width:1081px){
+@media (max-width:350px){
 .images-container{
         background-color: whitesmoke;
         display: grid;
